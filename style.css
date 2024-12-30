@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    @apply overflow-x-hidden font-popins;
+  }
   h1,
   h2,
   h3 {
