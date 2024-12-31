@@ -34,7 +34,9 @@ function setUpIntersectionObserver(element, isLTR, speed) {
 const line1 = document.getElementById("line-1");
 const line2 = document.getElementById("line-2");
 const line3 = document.getElementById("line-3");
+const line4 = document.getElementById("line-4");
 
 setUpIntersectionObserver(line1, true, 0.2);
 setUpIntersectionObserver(line2, false, 0.2);
 setUpIntersectionObserver(line3, true, 0.2);
+setUpIntersectionObserver(line4, true, 0.8);

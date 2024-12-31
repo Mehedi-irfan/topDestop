@@ -14,4 +14,10 @@
   h3 {
     @apply font-popins font-medium text-gray-800;
   }
+  .container {
+    @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32;
+  }
+  .title {
+    @apply lg:text-5xl text-4xl sm:font-semibold mb-14;
+  }
 }
