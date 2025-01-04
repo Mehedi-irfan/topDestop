@@ -40,3 +40,15 @@ setUpIntersectionObserver(line1, true, 0.2);
 setUpIntersectionObserver(line2, false, 0.2);
 setUpIntersectionObserver(line3, true, 0.2);
 setUpIntersectionObserver(line4, true, 0.8);
+
+const dtElements = document.querySelectorAll("dt");
+dtElements.forEach((element) => {
+  element.addEventListener("click", () => {
+    const ddId = element.getAttribute("aria-controls");
+    const ddElement = document.getElementById(ddId);
+    const ddArrow = element.querySelectorAll("i")[0];
+
+    ddElement.classList.toggle("hidden");
+    ddArrow.classList.toggle("-rotate-180");
+  });
+});
